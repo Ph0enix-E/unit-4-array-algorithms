@@ -38,7 +38,7 @@ public class ArrayAlgorithms {
       // REQUIRED: return the largest integer in intArray
       int length = intArray.length;
       int i = 0;
-      int highNum = 0;
+      int highNum = -2147483648;
       while (i < length) {
          if (intArray[i] > highNum) {
             highNum = intArray[i];
