@@ -53,7 +53,7 @@ public class ArrayAlgorithms {
       // HINT: use a nested for loop
       int length = intArray.length;
       int i = 0;
-      int x = 0;
+      int x = -100;
       boolean duplicate = false;
       while (i < length) {
          while (x < 100) {
