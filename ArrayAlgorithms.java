@@ -53,11 +53,11 @@ public class ArrayAlgorithms {
       // HINT: use a nested for loop
       int length = intArray.length;
       int i = 0;
-      int x = -100;
+      int x = 0;
       boolean duplicate = false;
       while (i < length) {
-         while (x < 100) {
-            if (x == intArray[i]) {
+         while (x < length) {
+            if (x != i && intArray[x] == intArray[i]) {
                duplicate = true;
             }
             x += 1;
@@ -102,7 +102,7 @@ public class ArrayAlgorithms {
       // 3) Call and print the result of EACH REQUIRED method
       // 4) If you are UWHS, also test the UWHS methods
       ArrayAlgorithms arrayAlgorithms = new ArrayAlgorithms(100);
-      arrayAlgorithms.populateArrayWithRandom();
+      arrayAlgorithms.populateArrayWithSequential(0);
       System.out.println(arrayAlgorithms.findMax());
       System.out.println(arrayAlgorithms.hasDuplicates());
       System.out.println(arrayAlgorithms.isInArray(58));

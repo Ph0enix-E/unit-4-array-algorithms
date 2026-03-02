@@ -60,11 +60,11 @@ public class ArrayListAlgorithms {
       // HINT: use a nested for loop
       int length = intArray.size();
       int i = 0;
-      int x = Integer.MIN_VALUE;
+      int x = 0;
       boolean duplicate = false;
       while (i < length) {
-         while (x < Integer.MAX_VALUE) {
-            if (x == intArray.get(i)) {
+         while (x < length) {
+            if (x != i && intArray.get(x) == intArray.get(i)) {
                duplicate = true;
             }
             x += 1;
@@ -109,5 +109,6 @@ public class ArrayListAlgorithms {
       System.out.println(test.findMax());
       System.out.println(test.hasDuplicates());
       System.out.println(test.isInArray(50));
+      System.out.println(test.intArray);
    }
 }
